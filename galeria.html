@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Experiências</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="cabecalho-titulo">✦ Conecta<strong>Jovem</strong></a>
+        
+        <nav class="cabecalho-menu">
+        <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="54" height="44" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" id="menu"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </span>
+            <ul class="cabecalho-menu-lista">
+                <li>                   
+                    <a href="index.html"
+                    class="cabecalho-menu-lista-links">
+                        <div class="cabecalho-icone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z" id="icon"/></svg>
+                        </div>
+                        <p class="texto">Início</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="galeria.html" class="cabecalho-menu-lista-links">
+                        <div class="cabecalho-icone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1" id="icon"/></svg>
+                        </div>
+                        <p class="texto">Galeria</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="sobre.html" class="cabecalho-menu-lista-links">
+                        <div class="cabecalho-icone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01" id="icon"/></svg>
+                        </div>
+                        <p class="texto">Sobre</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <p class="manchete">EXPLORE E DESCUBRA</p>
+        <h1 class="destaques">Galeria de Experiências</h1>
+
+        <nav class="filtros">
+            <button
+            class="filtro ativo"
+            data-filtro="todas"
+            >
+                Todas
+            </button>
+            <button
+            class="filtro"
+            data-filtro="cultura"
+            >
+                Cultura
+            </button>
+            <button
+            class="filtro"
+            data-filtro="criatividade"
+            >
+                Criatividade
+            </button>
+            <button
+            class="filtro"
+            data-filtro="descobertas"
+            >
+                Descobertas
+            </button>
+        </nav>
+        <p id="totalImagens" class="total"></p>
+        <div class="principal-imagens">
+            <img src="assets/imagens/foto01.jpg" alt="Festival de musica" class="miniatura destaque" data-titulo="Festival de música" data-categoria="cultura" data-descricao="Festivais culturais de música e muito mais!">
+            <img src="assets/imagens/foto02.jpg" alt="Universo gamer" class="miniatura" data-categoria="criatividade" data-titulo="Universo gamer" data-descricao="Faça sua criatividadenascer em meio ao universo dos games!">
+            <img src="assets/imagens/foto03.jpg" alt="Arquitetura urbana" class="miniatura vertical" data-categoria="descobertas" data-titulo="Arquitetura urbana" data-descricao="Descubra as curiosidades que cercam nossa arquitetura!">
+            <img src="assets/imagens/foto04.jpg" alt="Esportes e movimento" class="miniatura" data-categoria="cultura" data-titulo="Esportes e movimento" data-descricao="Esportes, cultura e movimento, melhoram saúde e conhecimentos!">
+            <img src="assets/imagens/foto05.jpg" alt="Tecnologia criativa" class="miniatura horizontal" data-categoria="criatividade" data-titulo="Tecnologia criativa" data-descricao="Pense, crie, inove em meio a está era de tecnologia!">
+            <img src="assets/imagens/foto06.jpg" alt="Cinema e histórias" class="miniatura" data-categoria="criatividade" data-titulo="Cinema, e histórias" data-descricao="Cinema, arte e cultura, podem ser uma fonte de conhecimento cultural!">
+            <img src="assets/imagens/foto07.jpg" alt="Natureza e aventura" class="miniatura" data-categoria="descobertas" data-titulo="Natureza e aventura" data-descricao="Explore, vá, veja o mundo, viva o mundo!">
+            <img src="assets/imagens/foto08.jpg" alt="Fotografia jovem" class="miniatura horizontal" data-categoria="cultura" data-titulo="Fotografia jovem" data-descricao="Guarde recordações da nossa herança cultural">
+            <img src="assets/imagens/foto09.jpg" alt="Ciência do dia a dia" class="miniatura horizontal" data-categoria="descobertas" data-titulo="Ciência do dia a dia"  data-descricao="Entre em descobertas desse mundo e da ciência no dia a dia">
+        </div>
+
+     <p id="totalImagens" class="total"></p> 
+    </main>
+     <div
+      id="modal"
+      class="modal"
+     >
+      
+        
+        <div class="modal-conteudo">
+            <img src="" alt="Imagem Ampliada" id="imagemModal">
+           
+        </div>    
+        <section class="informacoes" id="informacoes">
+                <div class="legenda">
+                    <span id="contador"></span>
+                    <span id="nomeImagem"></span>
+                </div>
+                <div class="informacoes-conteudo">
+                    <span id="titulo"></span>
+                    <span id="descricao"></span>
+                </div>
+                <button id="fechar" class="fechar">&times;</button>
+        <button id="anterior" class="navegacao anterior"><p class="texto">anterior</p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg><path d="m9 18 6-6-6-6"/></svg></button>
+                <button id="proximo" class="navegacao proximo"><p class="texto">Próxima</p> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+        </section>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
