@@ -58,7 +58,7 @@
 ### 🚀 How to run locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/brunossilva12-creator/projeto-conecta-jovem/tree/main
    ```
 2. Open the project folder and launch the `index.html` file in your browser.
 
