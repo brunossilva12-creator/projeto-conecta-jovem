@@ -28,7 +28,7 @@
 ### 🚀 Como executar localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/brunossilva12-creator/projeto-conecta-jovem/tree/main
    ```
 2. Abra a pasta do projeto e execute o arquivo `index.html` diretamente no seu navegador.
 
